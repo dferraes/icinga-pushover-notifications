@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+
+# Virtual Environments
+venv/
+*.venv
+.venv/
+ENV/
+env/
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linting
+.mypy_cache/
+.pylint.d/
+.ruff_cache/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.orig
+
+# Personal development files (if needed)
+# .vscode/settings.json  # Uncomment to ignore personal VSCode settings
+# .idea/workspace.xml    # Uncomment to ignore personal PyCharm workspace

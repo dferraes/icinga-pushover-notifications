@@ -1,0 +1,45 @@
+[project]
+name = "icinga-pushover-notifications"
+version = "1.0.0"
+description = "Send Icinga 2 host and service notifications to Pushover"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "David Ferraes" }]
+# Standard library only, on purpose. CI proves it by importing the modules
+# without installing anything.
+dependencies = []
+
+[tool.black]
+line-length = 100
+target-version = ['py36', 'py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.venv
+  | venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+
+[tool.pylint.messages_control]
+max-line-length = 100
+disable = [
+    "C0114",  # missing-module-docstring
+]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.basic]
+good-names = ["i", "j", "k", "ex", "Run", "_", "id", "up", "ok"]
