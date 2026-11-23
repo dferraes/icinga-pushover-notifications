@@ -1,10 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>dferraes/renovate-config"],
+  "extends": [
+    "github>dferraes/renovate-config"
+  ],
   "description": [
     "This project has no runtime dependencies; Renovate mainly keeps the",
     "pinned GitHub Actions in .github/workflows up to date.",
     "No automerge on purpose: every bump is reviewed before merging."
   ],
-  "baseBranchPatterns": ["main"]
+  "baseBranchPatterns": [
+    "develop",
+    "main"
+  ]
 }
