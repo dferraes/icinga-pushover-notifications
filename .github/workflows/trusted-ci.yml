@@ -13,7 +13,7 @@ permissions:
 jobs:
   tests:
     name: Trusted tests (${{ matrix.python-version }})
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, personal]
     container:
       image: ${{ matrix.image }}
     if: >-
@@ -56,7 +56,7 @@ jobs:
 
   lint:
     name: Trusted lint
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, personal]
     container:
       image: docker.io/library/python:3.14-bookworm@sha256:3fe825da0a80fa8e2cd79baadeb76b03c0ddf3d6cdbc8346778a0208b9d6038c
     if: >-
